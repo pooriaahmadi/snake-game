@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+* {
+	font-family: "Kanit", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+canvas {
+	display: flex;
+}
+.menu {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.welcome-screen {
+	position: relative;
+	width: 500px;
+	height: 500px;
+	background-color: rgb(241, 241, 241);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.welcome-screen > .header > h4 {
+	color: rgb(50, 50, 50);
+}
+
+.welcome-screen > .buttons {
+	width: 80%;
+}
+
+.welcome-screen > .buttons > button {
+	height: 40px;
+	width: 100%;
+	border: none;
+	background-color: rgb(200, 200, 200);
+	cursor: pointer;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.welcome-screen > .buttons > button:hover {
+	background-color: rgb(150, 150, 150);
+}
+.count-down {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+.buttons > .buttons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.buttons > .buttons > button {
+	width: calc(100% / 3 - 10px);
+}
+.buttons > .buttons > button:hover {
+	background-color: rgb(150, 150, 150);
+}
+.buttons > .buttons > button.active {
+	background-color: rgb(150, 150, 150);
+}
+.welcome-screen > button {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	font-size: 15px;
+	width: 120px;
+}
+button {
+	height: 40px;
+	border: none;
+	background-color: rgb(200, 200, 200);
+	cursor: pointer;
+	font-size: 20px;
+}
+.score {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	font-size: 25px;
+}
